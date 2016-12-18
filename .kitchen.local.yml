@@ -5,6 +5,3 @@ driver:
 driver_config:
   network:
     - ["forwarded_port", { guest: 9200, host: 9200 }]
-    - ["forwarded_port", { guest: 5959, host: 5959 }]
-  vagrantfiles:
-  - VagrantAdditionalConfig.rb
