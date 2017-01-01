@@ -6,3 +6,6 @@ driver_config:
   network:
     - ["forwarded_port", { guest: 9200, host: 9200, auto_correct: true }]
     - ["forwarded_port", { guest: 5601, host: 5601, auto_correct: true }]
+
+provisioner:
+  chef_omnibus_install_options: -d /tmp/vagrant-cache/vagrant_omnibus
